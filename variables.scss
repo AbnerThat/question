@@ -1,0 +1,29 @@
+$color-primary: blue;
+$color-secondary: red;
+//sadfas
+@mixin btn {
+  background-color: $color-primary;
+  padding: 3rem;
+  border-radius: 11px;
+  color: #fff;
+}
+
+.container {
+  max-width: 600px;
+  padding: 30px;
+  margin: 0 auto;
+  background-color: #999;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  position: relative;
+}
+
+img {
+  position: absolute;
+  height: 20rem;
+}
+
+body {
+  background-color: #ffc9c9;
+}

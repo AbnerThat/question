@@ -1,0 +1,22 @@
+@import "./variables.scss";
+
+// @mixin btn {
+//   background-color: red;
+//   padding: 3rem;
+//   border-radius: 11px;
+//   color: #fff;
+// }
+section {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn {
+  @include btn;
+}
+
+.btn:hover {
+  background-color: $color-secondary;
+}
