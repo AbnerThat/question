@@ -10,7 +10,7 @@
   <body>
     <section>
       <div class="container">
-        <h1>Do you want bee my girlfrind?</h1>
+        <h1>Do you want be my girlfrind?</h1>
         <div>
           <button class="btn btn-yes">YES 😍</button>
           <button class="btn btn-no">NO!</button>
@@ -19,8 +19,14 @@
         <img class="img-yes"></img>
       </div>
     </section>
-    
+    <div class="overlay hidden"></div>
     <script>
+
+      function showOverlay(){
+        const overlay = document.querySelector('.overlay')
+        overlay.classList.remove('hidden')
+      }
+
       const btn = document.querySelector(".btn-no");
       const yes = document.querySelector(".btn-yes");
 
@@ -40,6 +46,7 @@
 
         img.setAttribute('src', URLIMAGEDONRAMON);
 
+        showOverlay();
       });
 
       yes.addEventListener("click", () => {
@@ -48,6 +55,7 @@
 
         img.setAttribute('src', URLIMAGEDONRAMON);
 
+        showOverlay();
       });
     </script>
   </body>
